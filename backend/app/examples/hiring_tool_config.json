@@ -1,0 +1,32 @@
+{
+  "company_context": "Spectrum Hire (spectrumhire.ai) is a multi-tool B2B AI SaaS product built by a solopreneur with a physics background. It converts chaotic hiring requirements into crystal-clear data structures across three core tools: a Job Description Generator, a Weighted/Structured Interview Rubric Maker, and an Interview Prep Tool for candidates.",
+  "framework_description": "Evaluating candidate brand names for the product suite described above.",
+  "candidates": [
+    { "name": "Refract AI" },
+    { "name": "SpectrumLabs" },
+    { "name": "Spectrum Hire" },
+    { "name": "SpectrumView" }
+  ],
+  "personas": [
+    {
+      "id": "hiring_manager",
+      "name": "Hiring Manager",
+      "description": "Primary audience. Busy founder/lead at a 20-person startup. Hires 2-5x a year. Cares about utility, rapid implementation, clear outcomes, and time-saving metrics. Allergic to enterprise bloat.",
+      "weight": 45
+    },
+    {
+      "id": "fractional_hr_consultant",
+      "name": "Fractional HR Consultant",
+      "description": "Buyer/influencer. Consultant managing talent frameworks for small-to-mid businesses. Cares about compliance, repeatable scoring systems, weighted parameters, alignment, and data trust.",
+      "weight": 35
+    },
+    {
+      "id": "tech_job_seeker",
+      "name": "Tech Job Seeker",
+      "description": "Secondary audience. Mid-to-senior software engineer. Cares about evaluation transparency, objective assessment criteria, modern technical design, and bias-free pipelines.",
+      "weight": 20
+    }
+  ],
+  "phase1_turns_per_persona": 1,
+  "phase3_rounds": 2
+}

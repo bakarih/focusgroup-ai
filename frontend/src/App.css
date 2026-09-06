@@ -1,0 +1,182 @@
+:root {
+  color-scheme: light dark;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #0f1115;
+  color: #e6e8eb;
+}
+
+.app {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+.tagline {
+  color: #9aa2ad;
+}
+
+.config-form,
+.list-editor,
+.phase-panel,
+.connection-status,
+.scorecard-section {
+  background: #171a21;
+  border: 1px solid #262b35;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.config-form label {
+  display: block;
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.config-form textarea {
+  width: 100%;
+  min-height: 3rem;
+  margin-top: 0.25rem;
+  background: #0f1115;
+  color: inherit;
+  border: 1px solid #2f3542;
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
+.list-editor-row {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  align-items: center;
+}
+
+.list-editor-row input {
+  background: #0f1115;
+  color: inherit;
+  border: 1px solid #2f3542;
+  border-radius: 4px;
+  padding: 0.4rem 0.5rem;
+}
+
+.persona-row input:nth-child(1) {
+  flex: 1;
+}
+.persona-row input:nth-child(2) {
+  flex: 2;
+}
+.persona-row input:nth-child(3) {
+  width: 5rem;
+}
+
+.normalized-hint {
+  font-size: 0.85rem;
+  color: #9aa2ad;
+  min-width: 3.5rem;
+}
+
+.normalized-summary {
+  font-size: 0.85rem;
+  color: #9aa2ad;
+}
+
+button {
+  background: #5b8def;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 0.9rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+button:disabled {
+  background: #3a4150;
+  cursor: not-allowed;
+}
+
+.load-example,
+.reset-button {
+  background: transparent;
+  border: 1px solid #5b8def;
+  color: #5b8def;
+  margin-bottom: 1rem;
+}
+
+.error-text {
+  color: #e0705b;
+}
+
+.connection-status {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.status-dot {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background: #e0b64f;
+}
+
+.status-done .status-dot {
+  background: #4caf82;
+}
+
+.status-error .status-dot {
+  background: #e0705b;
+}
+
+.normalization-note {
+  color: #9aa2ad;
+  font-size: 0.8rem;
+}
+
+.phase-panel.active {
+  border-color: #5b8def;
+}
+
+.phase-guidance {
+  color: #9aa2ad;
+  font-size: 0.9rem;
+}
+
+.persona-turn {
+  border-left: 3px solid #5b8def;
+  padding: 0.4rem 0.75rem;
+  margin-bottom: 0.6rem;
+}
+
+.persona-turn-header {
+  display: flex;
+  gap: 0.5rem;
+  align-items: baseline;
+  margin-bottom: 0.15rem;
+}
+
+.candidate-tag {
+  font-size: 0.75rem;
+  color: #9aa2ad;
+  border: 1px solid #2f3542;
+  border-radius: 999px;
+  padding: 0.05rem 0.5rem;
+}
+
+.scorecard-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.scorecard-table th,
+.scorecard-table td {
+  border-bottom: 1px solid #262b35;
+  padding: 0.4rem 0.5rem;
+  text-align: left;
+}
