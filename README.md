@@ -48,14 +48,16 @@ pip install -r requirements.txt
 Create a `.env` file in `backend/` (see `.env.example`):
 
 ```env
-OPENAI_API_KEY=your-openai-api-key-here
+ANTHROPIC_API_KEY=your-anthropic-api-key-here
 
 # LangSmith Observability Setup
 LANGCHAIN_TRACING_V2=true
 LANGCHAIN_PROJECT=focusgroup-ai-simulation
 LANGCHAIN_API_KEY=your-langsmith-api-key-here
 
-MODEL_NAME=gpt-4o
+# Swap to claude-sonnet-5 or claude-haiku-4-5 for a cheaper/faster run;
+# any model_name in a submitted SimulationConfig overrides this per-request.
+MODEL_NAME=claude-opus-5
 PORT=8000
 ```
 

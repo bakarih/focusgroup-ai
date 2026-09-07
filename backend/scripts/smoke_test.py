@@ -1,8 +1,8 @@
-"""Manual end-to-end smoke test against a REAL running backend + real OpenAI API.
+"""Manual end-to-end smoke test against a REAL running backend + real Anthropic API.
 
 Requires:
   1. `uvicorn main:app --reload --port 8000` running in another terminal, with a
-     real OPENAI_API_KEY set in backend/.env.
+     real ANTHROPIC_API_KEY set in backend/.env.
   2. `pip install websockets` (already in requirements.txt) plus `httpx`.
 
 Usage:

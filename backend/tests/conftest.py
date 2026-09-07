@@ -62,7 +62,7 @@ class FakeChatModel:
 @pytest.fixture(autouse=True)
 def fake_llm(monkeypatch):
     """Every test gets a fake LLM everywhere a node reaches for get_chat_model() —
-    no network access or OPENAI_API_KEY is ever required to run this suite."""
+    no network access or ANTHROPIC_API_KEY is ever required to run this suite."""
     factory = lambda *args, **kwargs: FakeChatModel()
     monkeypatch.setattr("app.graph.nodes.planner.get_chat_model", factory)
     monkeypatch.setattr("app.graph.nodes.executor.get_chat_model", factory)
