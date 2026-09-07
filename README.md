@@ -55,9 +55,10 @@ LANGCHAIN_TRACING_V2=true
 LANGCHAIN_PROJECT=focusgroup-ai-simulation
 LANGCHAIN_API_KEY=your-langsmith-api-key-here
 
-# Swap to claude-sonnet-5 or claude-haiku-4-5 for a cheaper/faster run;
-# any model_name in a submitted SimulationConfig overrides this per-request.
-MODEL_NAME=claude-opus-5
+# Swap to claude-opus-5 for stronger debate quality, or claude-haiku-4-5 for
+# cheaper/faster; any model_name in a submitted SimulationConfig overrides
+# this per-request.
+MODEL_NAME=claude-sonnet-5
 PORT=8000
 ```
 

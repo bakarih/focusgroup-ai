@@ -8,7 +8,7 @@ class Settings(BaseSettings):
     langchain_tracing_v2: bool = False
     langchain_project: str = "focusgroup-ai-simulation"
     langchain_api_key: str = ""
-    model_name: str = "claude-opus-5"
+    model_name: str = "claude-sonnet-5"
     port: int = 8000
 
 
